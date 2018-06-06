@@ -20,12 +20,13 @@
 <script>
 function myFunction() {
     var person = prompt("Please enter your name", "");
-    if (person != null) {
-var res = person.slice(0,2);
+    if (person == null || person == "") {
+window.location = "https://programmerrush.github.io/result/index.html"; 
+    }
+    else{
+        var res = person.slice(0,2);
 var res2= "http://msbte.org.in/Marksheets/EnrollmentNumber/" + res + "/" + person + "Marksheet.html";
-
-window.location = res2;
-
+window.location = res2;        
     }
 }
 </script>
