@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter enrollment no in box to view result</p>
+
+<button onclick="myFunction()">View result</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    if (person != null) {
+var res = person.slice(0,2);
+var res2= "http://msbte.org.in/Marksheets/EnrollmentNumber/" + res + "/" + person + "Marksheet.html";
+
+window.location = res2;
+
+    }
+}
+</script>
+
+</body>
+</html>
