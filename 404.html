@@ -1,50 +1,39 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Refresh" content="0";url="https://programmerrush.github.io/result/">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-        @media only screen and (max-width: 280px) {
-            body, p {
-                width: 95%;
-            }
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-        }
-    </style>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="cache-control" content="no-cache">
+    </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120360694-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120360694-1');
+</script>
+    
+    <h2>Result HAck by Programmer Rushikesh</h2>
+<p>Enter enrollment no in box to view result</p>
+
+<button onclick="myFunction()">View result</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your Enrollment No.", "");
+    if (person == null || person == "") {
+window.location = "https://programmerrush.github.io/result/index.html"; 
+    }
+    else{
+        var res = person.slice(0,2);
+var res2= "https://msbte.org.in/CORAGLKW20LIVEResult/CORAGLKW20LIVEResult/EnrollmentNumber/" + res + "/" + person + "Marksheet.html";
+window.open(res2,'_blank');        
+    }
+}
+</script>
+
 </body>
 </html>
